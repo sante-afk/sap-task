@@ -5,8 +5,8 @@
 		"id": "com.myorg.myapp",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
-		"title": "{{appTitle}}",
-		"description": "{{appDescription}}",
+		"title": "{{APP_TITLE}}",
+		"description": "{{APP_DESCRIPTION}}",
 		"applicationVersion": {
 			"version": "${version}"
 		},
@@ -53,7 +53,7 @@
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
 					"bundleName": "com.myorg.myapp.i18n.i18n",
-					"supportedLocales": ["en", "de"],
+					"supportedLocales": ["en", "ru"],
 					"fallbackLocale": "en",
 					"async": true
 				}
