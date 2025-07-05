@@ -1,10 +1,10 @@
-# UI5 Application com.myorg.myapp
+# UI5 Application Sap Task
 
-Insert the purpose of this project and some interesting info here...
+The goal of the project is to provide the user with a prioritized list of tasks that will help them remember everything, manage their time wisely, and effectively complete all planned tasks on time.
 
 ## Description
 
-This app demonstrates a setup for developing UI5 applications.
+This app is designed for managing everyday tasks with an emphasis on prioritization and deadlines.
 
 ## Requirements
 
