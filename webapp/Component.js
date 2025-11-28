@@ -1,4 +1,10 @@
-sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/Device", "./model/models"], function (UIComponent, Device, models) {
+sap.ui.define([
+	"sap/ui/core/UIComponent", 
+	"sap/ui/Device", 
+	"./model/models",
+	'sap/ui/model/json/JSONModel'
+], 
+function (UIComponent, Device, models, JSONModel) {
 	"use strict";
 
 	return UIComponent.extend("com.myorg.myapp.Component", {
@@ -15,6 +21,16 @@ sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/Device", "./model/models"], fu
 
 			// create the views based on the url/hash
 			this.getRouter().initialize();
+
+			const mCategory = new JSONModel({
+				events: [],
+				important: [],
+				learning: [],
+				work: [],
+				others: []
+			});
+
+			this.setModel(mCategory, "mCategory");
 		},
 		/**
 		 * This method can be called to determine whether the sapUiSizeCompact or sapUiSizeCozy
