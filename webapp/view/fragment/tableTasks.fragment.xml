@@ -1,0 +1,42 @@
+<core:FragmentDefinition
+    height="100%"
+    width="100%"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.f"
+    xmlns:t="sap.ui.table">
+    <f:DynamicPage>
+        <f:content>
+            <Table 
+                id="tasksTable" 
+                items="{mTasks>/tasks}">
+                <columns>
+                    <Column>
+                        <Text text="{i18n>TABLE_TASKS_NAME}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>TABLE_TASKS_CATEGORY}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>TABLE_TASKS_BEGDA}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>TABLE_TASKS_ENDDA}" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{mTasks>title}" />
+                            <Text text="{mTasks>category}" />
+                            <Text text="{mTasks>begda}" />
+                            <Text text="{mTasks>endda}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </f:content>
+    </f:DynamicPage>
+</core:FragmentDefinition>

@@ -22,15 +22,10 @@ function (UIComponent, Device, models, JSONModel) {
 			// create the views based on the url/hash
 			this.getRouter().initialize();
 
-			const mCategory = new JSONModel({
-				events: [],
-				important: [],
-				learning: [],
-				work: [],
-				others: []
-			});
+			const mTasks = new JSONModel();
 
-			this.setModel(mCategory, "mCategory");
+			this.setModel(mTasks, "mTasks");
+			
 		},
 		/**
 		 * This method can be called to determine whether the sapUiSizeCompact or sapUiSizeCozy

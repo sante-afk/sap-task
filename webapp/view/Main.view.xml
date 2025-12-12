@@ -31,7 +31,8 @@
 								<Input
 									id="taskName"
 									placeholder="Enter Task Name"
-									liveChange=""/>
+									liveChange=""
+									width="240px"/>
 							</mdc:FilterField>
 
 							<mdc:FilterField
@@ -39,7 +40,8 @@
 								<Select
 									id="category"
 									name="Category"
-									change=""/>
+									change=""
+									width="240px"/>
 							</mdc:FilterField>
 
 							<mdc:FilterField
@@ -49,7 +51,8 @@
 									name="Date"
 									placeholder="Select Date"
 									dateValue=""
-									secondDateValue=""/>
+									secondDateValue=""
+									width="240px"/>
 							</mdc:FilterField>
 							
 						</mdc:filterItems>
@@ -59,6 +62,11 @@
 			</f:DynamicPageHeader>
 		</f:header>
 		<f:content>
+			<VBox>
+				<core:Fragment 
+					fragmentName="com.myorg.myapp.view.fragment.tableTasks" 
+					type="XML"/>
+			</VBox>
 		</f:content>
 	</f:DynamicPage>
 </mvc:View>
